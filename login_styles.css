@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #131836;
+  --secondary-color: #ef332e;
+  --success-color: #4caf50;
+  --text-color: #333;
+  --light-bg: #f5f7fa;
+  --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+.error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.remember-me input {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Dashboard Table Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Wrapper */
+.dashboard-table-container {
+    overflow-x: auto;
+}
+
+/* Table Styling */
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Apply alternating row colors */
+.dashboard-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White row */
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+    background-color: #f0f0f0; /* Light gray row */
+}
+
+.dashboard-table tbody tr:hover {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+/* Pagination */
+.dashboard-pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.pagination-link:hover {
+    background: #ddd;
+}
+
+.pagination-link.active {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+    border-color: #007bff;
+}
+
+.pagination-link.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-dots {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #777;
+}
+
+
+/* Logout Button */
+.dashboard-logout-btn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dashboard-logout-btn:hover {
+    background-color: #a71d2a;
+}

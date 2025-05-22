@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Status | DTFS</title>
+    <link rel="stylesheet" href="css/status.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/">
+          <div class="logo">
+            <img
+              src="assets/images/logo.png"
+              alt="dev tobs logo"
+              class="logo-img"
+            />
+            <img class="logo-text" src="assets/images/logo-b.png" alt="" />
+          </div>
+        </a>
+        <button onclick="window.location.href='/'" class="create-magic-btn">
+          Close Page
+        </button>
+      </header>
+
+      <main>
+        <!-- Loading Section -->
+        <section id="loading" class="status-section active">
+          <div class="loading-status">
+            <div class="loading-image">
+              <img src="assets/images/loader.gif" alt="" />
+            </div>
+            <h2>Checking the status of your scholarship</h2>
+            <div class="loading-line">
+              <div class="loading-progress" id="loadingProgressBar"></div>
+            </div>
+            <p class="loading-percentage" id="loadingPercentage">0%</p>
+          </div>
+        </section>
+
+        <!-- Success Section -->
+        <section id="success" class="status-section">
+          <div class="status-content">
+            <div class="status-icon success">
+              <img src="assets/images/icons/medal-star.svg" alt="" />
+            </div>
+            <h2>Congratulations <span id="userName"></span> 🎉</h2>
+            <h3>You've been awarded a DevTobs Scholarship!</h3>
+
+            <p class="status-message">
+              Out of hundreds of impressive applicants, I'm thrilled to inform
+              you that your application has been approved and you've been
+              awarded a DevTobs scholarship from our Tech Fellowship Program!
+            </p>
+
+            <p class="status-message">
+              You will also need to participate in our kickoff session with full
+              support from the Tech Support Center. Further instructions will be
+              sent to your email shortly.
+            </p>
+
+            <p class="status-note">
+              For any inquiries, feel free to reach out.
+            </p>
+
+            <p class="status-signature">
+              Congratulations once again! 🎉<br />
+              DTFS Scholarship Team
+            </p>
+
+            <div class="mentor-section">
+              <h3>Get in touch with your Mentor</h3>
+              <ul class="contact-links">
+                <li>
+                  Connect with your Mentor on
+                  <a href="https://wa.me/+447355658093" class="whatsapp-link"
+                    >WhatsApp here</a
+                  >
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="instagram-link">Instagram here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="linkedin-link">LinkedIn here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="twitter-link">Twitter here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Under Review Section -->
+        <section id="review" class="status-section">
+          <div class="status-content">
+            <div class="status-icon review">
+              <img src="assets/images/icons/timer.svg" alt="" />
+            </div>
+            <h2>Application Under Review</h2>
+
+            <p class="status-message">
+              Thank you for submitting your application. Out of hundreds of
+              impactful applications, our team needs more time to review yours.
+              We appreciate your patience, you'll hear from our team once a
+              decision has been made.
+            </p>
+
+            <p class="status-note">
+              For any inquiries, feel free to reach out.
+            </p>
+
+            <p class="status-signature">
+              Congratulations once again! 🎉<br />
+              DTFS Scholarship Team
+            </p>
+
+            <div class="consultant-section">
+              <h3>While waiting, speak to a consultant</h3>
+              <ul class="contact-links">
+                <li>
+                  Connect with your Mentor on
+                  <a href="#" class="whatsapp-link">WhatsApp here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="instagram-link">Instagram here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="linkedin-link">LinkedIn here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="twitter-link">Twitter here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Not Selected Section -->
+        <section id="rejected" class="status-section">
+          <div class="status-content">
+            <div class="status-icon rejected">
+              <img src="assets/images/icons/information.svg" alt="" />
+            </div>
+            <h2>Application Not Selected!</h2>
+
+            <p class="status-message">
+              Thank you so much for applying during this time. While we're
+              inspired by your passion, we've had millions of tech enthusiasts
+              applying for this opportunity, and that's sparked some tough
+              decisions.
+            </p>
+
+            <p class="status-message">
+              These decisions don't diminish what you're capable of! We believe
+              your resilience and passion will carry you toward your goals. You
+              are on the right path.
+            </p>
+
+            <p class="status-note">
+              For any inquiries, feel free to reach out.
+            </p>
+
+            <p class="status-signature">
+              Congratulations once again! 🎉<br />
+              DTFS Scholarship Team
+            </p>
+
+            <div class="consultant-section">
+              <h3>Speak to a consultant</h3>
+              <ul class="contact-links">
+                <li>
+                  Connect with your Mentor on
+                  <a href="#" class="whatsapp-link">WhatsApp here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="instagram-link">Instagram here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="linkedin-link">LinkedIn here</a>
+                </li>
+                <li>
+                  Connect with your per
+                  <a href="#" class="twitter-link">Twitter here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="JS/status.js"></script>
+  </body>
+</html>

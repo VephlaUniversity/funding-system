@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="login_styles.css" />
+    <link rel="icon" type="image/svg+xml" href="Logoo.svg">
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <div class="logo-container">
+          <img src="vlogo.png" alt="Company Logo" class="logo" />
+          <h1>Welcome Back!</h1>
+        </div>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <div class="error" id="emailError">Please enter a valid email address</div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+            <div class="error" id="passwordError">Password must be at least 6 characters</div>
+          </div>
+
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+
+          <button type="submit" id="loginButton">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Check if logout just happened
+      if (new URLSearchParams(window.location.search).has("logged_out")) {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("userEmail");
+        window.history.replaceState({}, document.title, "login.html"); // Remove query param
+      }
+    
+      document.getElementById("loginForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const loginAlert = document.getElementById("loginAlert"); // Assuming an alert div exists
+        const passwordError = document.getElementById("passwordError"); // Assuming a password error div exists
+    
+        if (loginAlert) loginAlert.style.display = "none";
+        if (passwordError) passwordError.style.display = "none";
+    
+        if (validateForm(email, password)) {
+          if (checkCredentials(email.value, password.value)) {
+            saveSession(email.value);
+            window.location.href = "admin.html"; // Redirect
+          } else {
+            passwordError.style.display = "block";
+            passwordError.textContent = "Invalid email or password combination";
+          }
+        }
+      });
+    
+      function validateForm(email, password) {
+        if (!email.value || !password.value) {
+          alert("Both email and password are required!");
+          return false;
+        }
+        return true;
+      }
+    
+      function checkCredentials(email, password) {
+        const validUsers = {
+          "staff@devtobs.com": "Devtobsstaff0068"
+        };
+    
+        return validUsers[email.toLowerCase()] === password;
+      }
+    
+      function saveSession(email) {
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("userEmail", email.toLowerCase());
+      }
+    </script>
+  </body>
+</html>

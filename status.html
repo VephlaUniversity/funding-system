@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarship Status | Status</title>
+    <link rel="stylesheet" href="css/status.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/">
+          <div class="logo">
+            <img
+              src="assets/images/logo.png"
+              alt="dev tobs logo"
+              class="logo-img"
+            />
+            <img class="logo-text" src="assets/images/logo-b.png" alt="" />
+          </div>
+        </a>
+        <button onclick="window.location.href='/'" class="create-magic-btn">
+          Close Page
+        </button>
+      </header>
+
+      <main class="status-check">
+        <h1>Check your scholarship status</h1>
+        <p class="intro-text">
+          Hey there Techie! You can check the status of your scholarship
+          application with your email address below.
+        </p>
+
+        <form id="checkStatusForm">
+          <div class="input-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Johndoe@gmail.com"
+            />
+          </div>
+          <button type="submit" class="check-status-btn">
+            Check scholarship status <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </main>
+      <div class="testimonial-slider">
+        <!-- Testimonial 1 -->
+        <div class="testimonial" data-index="0">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">
+            This scholarship has really been a God sent in this time that I've
+            been wanting to have a tech skill, UI/UX to be precise, but have not
+            really had the funding to make this possible until DevTobs came to
+            the rescue. Thank DevTobs.
+          </p>
+          <div class="author">
+            <img
+              src="assets/images/Judith.png"
+              alt="Okwuo Judith"
+              class="author-img"
+            />
+            <div class="author-info">
+              <p class="author-name">Okwuo Judith</p>
+              <p class="author-handle">@JudithOkwuo</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial" data-index="1" style="display: none">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">
+            Without this scholarship I never would have taken the bold step of
+            switching to the Tech community and pursuing a Data Analytics
+            career. Getting the scholarship immediately presented a pathway for
+            me to get a laptop and it has also opened me up to resources,
+            materials, and more scholarships for me to learn and earn. Thank
+            you, and God bless you Dev. Tobs.
+          </p>
+          <div class="author">
+            <img
+              src="assets/images/Oluwaseyi.png"
+              alt="Oluwaseyi"
+              class="author-img"
+            />
+            <div class="author-info">
+              <p class="author-name">Oluwaseyi Kolawole</p>
+              <p class="author-handle">@Analytics_KOMA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial" data-index="2" style="display: none">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="quote">
+            This scholarship is a big blessing to my life. It gave me hope and
+            strength to believe in myself again and now I’m rooting for myself
+            now more than ever before because I do not want to disappoint
+            Dev.tobs, who believed in me, and the people that gave me life. I
+            intend to make full use of this opportunity, God willing.
+          </p>
+          <div class="author">
+            <img
+              src="assets/images/Omogiate.png"
+              alt="Omogiate"
+              class="author-img"
+            />
+            <div class="author-info">
+              <p class="author-name">Omogiate Praise Uromwen</p>
+              <p class="author-handle">@OmogiatePraise</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <div class="pagination-buttons">
+          <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+          <div class="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        <div class="footer-content">
+          <div class="footer-text">
+            <h2>
+              Build Your Future in Tech. <br />
+              Let's Create Opportunities Together!
+            </h2>
+
+            <div class="footer-buttons">
+              <button class="find-scholarship-btn">Find a scholarship</button>
+              <button
+                onclick="window.loacation.href='mailto:funding@devtobs.com'"
+                class="get-in-touch-btn"
+              >
+                Get in touch &nbsp; <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Contact</h3>
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/status.js"></script>
+  </body>
+</html>

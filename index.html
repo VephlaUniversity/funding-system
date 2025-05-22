@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTobs Tech Grants | DTFS</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        <div class="logo">
+          <img class="logo-a" src="assets/images/logo.png" alt="" />
+          <img class="logo-b" src="assets/images/logo-b.png" alt="" />
+        </div>
+      </a>
+      <div class="header-actions">
+        <div
+          class="check-status"
+          onclick="window.location.href='https://funding-status.devtobs.com'"
+        >
+          Check Scholarship Status
+        </div>
+        <a href="apply" class="scholarship-button">Find a scholarship</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Supporting <span>techies' dreams,</span> one scholarship at a time.
+        </h1>
+        <div class="cta-buttons">
+          <p>
+            You have the vision, the passion, and the drive. Here’s your chance
+            to turn it into reality with a scholarship built for tomorrow’s tech
+            leaders.
+          </p>
+          <div class="cta-sub">
+            <a href="apply" class="cta-button">Find a Scholarship</a>
+            <a href="mailto:funding@devtobs.com" class="outline-button"
+              >Get in touch <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-title">
+        <h4>About DTFS</h4>
+        <p><span class="white">300+</span> Tech Scholarships</p>
+        <p><span class="white">10M+</span> Monetary Grants</p>
+        <p><span class="white">100+</span> Secured Roles</p>
+      </div>
+      <div class="about-content">
+        <p style="padding-bottom: 2rem">
+          The <span class="white">Dev Tobs Funding Scheme</span> has already
+          transformed the lives of countless tech students, helping them gain
+          access to world-class education and careers in tech. But the journey
+          doesn’t end here. As the industry evolves and new opportunities
+          emerge, the vision remains the same, to support the next generation of
+          innovators, builders, and problem solvers.
+        </p>
+        <p>
+          For those who believe in the power of education, mentorship, and
+          opportunity, there is always room to make a difference. The impact is
+          real, and the success stories are here.
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h4>Opportunities from DTFS</h4>
+        <h2>
+          Get Started. Get Funded. Get Mentored.<br />DevTobs Has You Covered
+        </h2>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="assets/images/Tech Kickstart.png"
+              alt="Application Process"
+            />
+            <h3>Tech Kickstart Grant</h3>
+            <p>
+              Launch your career with a fully funded laptop, a course roadmap,
+              and learning resources, all for your success.
+            </p>
+            <p class="apply-paragraph">
+              <a class="apply-link" href="tech-kickstart">Apply Now </a>
+              &nbsp;
+              <i class="fa-solid fa-arrow-right"></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/Laptop Grants.png" alt="Funding Details" />
+            <h3>Laptop Grants</h3>
+            <p>
+              Access funding for courses, career development, and job
+              application guidance, giving you the industry edge.
+            </p>
+            <p class="apply-paragraph">
+              <a class="apply-link" href="https://laptopfunding.devtobs.com"
+                >Apply Now
+              </a>
+              &nbsp;
+              <i class="fa-solid fa-arrow-right"></i>
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/images/Mentorship Grants.png"
+              alt="Mentorship Program"
+            />
+            <h3>Mentorship Grants</h3>
+            <p>
+              Gain knowledge from experienced professionals who will keep you
+              motivated, and on fast track to success.
+            </p>
+            <p class="apply-paragraph">
+              <a class="apply-link" href="mentorship-grant">Apply Now </a>
+              &nbsp;
+              <i class="fa-solid fa-arrow-right"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h4 style="text-align: center">Testimonials from DTFS</h4>
+      <div class="container">
+        <h2>From Learner to Leader:<br />Building the Future</h2>
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slides-container" id="slidesContainer"></div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="nav-button prev-button" id="prevButton">
+              <i style="color: #fff" class="fas fa-arrow-left"></i>
+            </button>
+
+            <div class="dots-container" id="dotsContainer"></div>
+
+            <button class="nav-button next-button" id="nextButton">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h4>FAQs from DTFS</h4>
+        <h2 class="faq-head">Got Questions?<br />We've Got Answers</h2>
+        <div class="faq-item">
+          <div class="faq-question">Who is Eligible to Apply?</div>
+          <div class="faq-answer">
+            Anyone passionate about technology and ready to learn can apply.
+            However, we prioritize those with strong motivation, clear goals,
+            and a genuine need for financial support or mentorship.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What is the Mentorship & Transition Aid program?
+          </div>
+          <div class="faq-answer">
+            Eligibility requirements include enrollment in an accredited
+            educational institution, maintaining a minimum GPA, and
+            demonstrating financial need. Specific programs may have additional
+            requirements.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What Does the Funding Scheme Cover?</div>
+          <div class="faq-answer">
+            Our application deadlines vary by program. The main scholarship
+            application deadline is typically March 31st each year, while
+            specialized programs may have different deadlines throughout the
+            year.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How Do I Apply?</div>
+          <div class="faq-answer">
+            Our scholarships may cover tuition fees, books, supplies, and in
+            some cases, living expenses. The exact coverage depends on the
+            specific scholarship program you're applying for.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What Is the Selection Process & Timeline?
+          </div>
+          <div class="faq-answer">
+            You can check your application status by logging into your account
+            on our application portal. All updates will be communicated through
+            your registered email address.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Is the Support Fully Funded?</div>
+          <div class="faq-answer">
+            Yes, all scholarship recipients are automatically enrolled in our
+            mentorship program where they are paired with industry professionals
+            or academic mentors based on their field of study.
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="footer-one">
+        <h2>
+          Build Your Future in Tech.<br />Let's Create Opportunities Together
+        </h2>
+        <div class="cta-sub">
+          <a href="apply" class="cta-button">Find a Scholarship</a>
+          <a href="mailto:funding@devtobs.com" class="outline-button"
+            >Get in touch <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-two">
+        <p>Contact</p>
+        <div class="footer-icon">
+          <a href="">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>

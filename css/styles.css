@@ -75,21 +75,21 @@ body {
 }
 
 .check-status {
-  display: flex;
-  align-items: center;
-  color: var(--text-light);
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 6.25rem;
   text-decoration: none;
-  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
   cursor: pointer;
-  outline: 1px solid #fff;
-  border-radius: 40px;
-  padding: 10px 8px;
-  cursor: pointer;
-  transition: 0.3s all ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .check-status:hover {
-  outline-color: #126a32;
+  background-color: #e4e4e4;
 }
 
 .scholarship-button {
@@ -581,6 +581,7 @@ body {
   max-width: 100%; /* Allow full width on mobile */
   text-align: center; /* Center on mobile */
   display: flex;
+
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
@@ -589,7 +590,7 @@ body {
 .cta-buttons p {
   color: #ccc;
   font-family: "Instrument Sans";
-  font-size: 1rem;
+
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
@@ -602,6 +603,7 @@ body {
   border-radius: 20px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 14px;
   transition: all 0.3s ease;
   border-radius: 6.25rem;
   border: 1px solid #98ffc4;
@@ -703,6 +705,28 @@ hr {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+.get-btn {
+  background-color: var(--primary-color);
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.get-btn i {
+  margin-left: 8px;
+  color: white;
+  display: inline-block;
+}
+.get-btn:hover {
+  background-color: #e4e4e4;
+}
 
 .footer-icon a {
   display: flex;
@@ -800,7 +824,8 @@ hr {
   }
 
   .get-btn {
-    padding: 5px 16px !important;
+    justify-content: center;
+    padding-block: 0.3rem;
   }
 
   .hero h1 span {

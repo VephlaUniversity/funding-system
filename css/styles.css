@@ -75,11 +75,12 @@ body {
 }
 
 .check-status {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  color: white;
   padding: 8px 16px;
   border-radius: 6.25rem;
+  font-size: 14px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -89,7 +90,7 @@ body {
 }
 
 .check-status:hover {
-  background-color: #e4e4e4;
+  border: 1px solid #fff;
 }
 
 .scholarship-button {
@@ -711,6 +712,7 @@ hr {
   color: white;
   padding: 8px 16px;
   border-radius: 6.25rem;
+  font-size: 14px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -724,8 +726,9 @@ hr {
   color: white;
   display: inline-block;
 }
+
 .get-btn:hover {
-  background-color: #e4e4e4;
+  background-color: #126a32;
 }
 
 .footer-icon a {

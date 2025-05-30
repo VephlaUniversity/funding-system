@@ -27,6 +27,38 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+document
+  .querySelectorAll(".hide-desc")
+  .forEach((el) => (el.style.display = "none"));
+
+document.querySelectorAll(".more").forEach(function (span) {
+  span.addEventListener("click", function () {
+    const hideDescSpan = span.previousElementSibling;
+    if (hideDescSpan) {
+      if (hideDescSpan.style.display === "none") {
+        hideDescSpan.style.display = "inline";
+        span.innerText = "Hide";
+      } else {
+        hideDescSpan.style.display = "none";
+        span.innerText = "Read More";
+      }
+    }
+  });
+});
+
+const hideContent = document.querySelector(".hide-content");
+const readMore = document.getElementById("read-more");
+
+readMore.addEventListener("click", () => {
+  if (hideContent.style.display === "block") {
+    hideContent.style.display = "none";
+    readMore.innerText = "Read More";
+  } else {
+    hideContent.style.display = "block";
+    readMore.innerText = "Hide";
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
